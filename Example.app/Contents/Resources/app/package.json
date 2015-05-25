@@ -1,0 +1,17 @@
+{
+  "name": "Soundbar",
+  "version": "1.0.0",
+  "description": "Soundcloud in your OS X status bar.",
+  "dependencies": {
+    "menubar": "*"
+  },
+  "devDependencies": {
+    "electron-packager": "^4.0.2",
+    "electron-prebuilt": "0.26.1"
+  },
+  "main": "soundbar.js",
+  "scripts": {
+    "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.26.0 --ignore=node_modules/electron --icon=Icon.icns",
+    "start": "electron ."
+  }
+}
