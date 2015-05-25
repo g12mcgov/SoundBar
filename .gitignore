@@ -1,2 +1,2 @@
-node_modules/*/node-modules/
-electron-packager-darwin-template 
+node_modules/
+electron-packager-darwin-template/
