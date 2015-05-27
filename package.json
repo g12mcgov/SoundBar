@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Soundcloud in your OS X status bar.",
   "dependencies": {
-    "menubar": "*"
+    "menubar": "*",
+    "node-soundcloud": "0.0.2"
   },
   "devDependencies": {
     "electron-packager": "^4.0.2",

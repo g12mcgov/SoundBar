@@ -1,17 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="web/js/api.js"></script>
+	<title>SoundBar</title>
+	<!-- Include Soundcloud API -->
 </head>
 <body>
-	<h1>Soundbar</h1>
-	<iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/users/1539950/favorites" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+
+	<iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/grant-mcgovern/likes" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+	
+	<script type="text/javascript" src="api.js"></script>
+	<script src="http://connect.soundcloud.com/sdk.js"></script>
 	<script>
-		var widgetIframe = document.getElementById('sc-widget'),
-        	widget       = SC.Widget(widgetIframe);
-		// var iframeElement = document.querySelector('iframe');
-		// var iframeElementID = iframeElement.id;
-		// var widget1 = SC.Widget(iframeElement);
-		// var widget2 = SC.Widget(iframeElementID);
+		/** Soundcloud Auth **/
+		// initialize client with app credentials
+		// SC.initialize({
+		//   client_id: 'ccf7856ce1df2c46016272511a2a4ecf',
+		//   redirect_uri: 'd5185182cc76d00dd640911e14357675'
+		// });
+
+		// // // initiate auth popup
+		// // SC.connect(function() {
+		// //   SC.get('/me', function(me) { 
+		// //     alert('Hello, ' + me.username); 
+		// //   });
+		// // });
+		// Declare Soundcloud Widget API iframe 
+		var widgetIframe = document.getElementById('sc-widget');
+        var widget = SC.Widget(widgetIframe);
 	</script>
 </body>
 </html>
